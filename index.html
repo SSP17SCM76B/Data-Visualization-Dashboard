@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Recreation Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="js/dataframe.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/chartSelection.js"></script>
+<script src="js/loadTable.js"></script>
+<script src="js/barChart.js"></script>
+<script src="js/lineChart.js"></script>
+<script src="js/pieChart.js"></script>
+<script src="js/doughnutChart.js"></script>
+<script src="js/stackChart.js"></script>
+<script src="js/pivotChart.js"></script>
+</head>
+<body>
+	<div id="left-nav">
+		<div class="title">
+			<font color="white">Dataset Menu</font>
+		</div>
+		<ul class="list">
+			<li class="list-item">
+				<button class="button" onclick="loadTable(this)" value="Cricket"
+					id="Cricket.csv" name="Cricket Dataset">
+					<h3>
+						<font color="white">Cricket</font>
+					</h3>
+				</button>
+			</li>
+			<li class="list-item">
+				<button class="button" onclick="loadTable(this)" value="Basketball"
+					id="Basketball.csv" name="Basketball Dataset">
+					<h3>
+						<font color="white">Basketball</font>
+					</h3>
+				</button>
+			</li>
+			<li class="list-item">
+				<button class="button" onclick="loadTable(this)" id="Hockey.csv"
+					value="Hockey" name="Hockey Dataset">
+					<h3>
+						<font color="white">Hockey</font>
+					</h3>
+				</button>
+			</li>
+			<li class="list-item">
+				<button class="button" onclick="loadTable(this)" id="Skating.csv"
+					value="Skating" name="Skating Dataset">
+					<h3>
+						<font color="white">Skating</font>
+					</h3>
+				</button>
+			</li>
+			<li class="list-item">
+				<button class="button" onclick="loadTable(this)"
+					value="Horse_Riding" id="Horse_Riding.csv"
+					name="Horse Riding Dataset">
+					<h3>
+						<font color="white">Horse Riding</font>
+					</h3>
+				</button>
+			</li>
+		</ul>
+	</div>
+	<div id="welcome">
+		<section id="page">
+			<header>
+				<h1 style="text-align: center">
+					<b>Recreation Dashboard</b>
+				</h1>
+			</header>
+			<div class="line"></div>
+			<article id="article1">
+				<h2>
+					<font color="white">Welcome!!!</font>
+				</h2>
+				<div class="line"></div>
+				<div class="articleBody clear">
+					<p style="font-size: 20px;">
+						<font color="white">This is a Dynamic Dashboard which helps
+							the user to visualize different Recreation datasets. It helps the
+							user in understanding large amount of raw data of a particular
+							recreational activity by visual representation of the data in the
+							form of charts. </font>
+					</p>
+					<br />
+					<p style="font-size: 20px;">
+						<font color="white">Please select a dataset to continue. </font>
+					</p>
+				</div>
+			</article>
+		</section>
+	</div>
+	<div align="center">
+	<div id="data"></div>
+	<div id="dataTable"></div>
+	<br>
+	<div id="columnLabel"></div>
+	<br />
+	<div id="displayColumns"></div>
+	<br />
+	<div id="checkbtn" onclick="send_query()"></div>
+	<br />
+	<div id="rowlabel"></div>
+	<br />
+	<div id="displayRows" class="radiobtn" onchange="radioData()"></div>
+	<br />
+	<div class="filterClass">
+		<div id="filter1" onclick="include()"></div>
+		<div id="filter2" onclick="exclude()"></div>
+	</div>
+	<br />
+	<div id="filterlbl"></div>
+	<br />
+	<form id="displayFilters" name="filterForm" class="fillradio" onchange="displayDrop()"></form>
+	<br />
+	<div id="drop" onchange="dropdata()"></div><br/>
+	<div id="apply" class="applyclass" onclick="chartTypes()"></div>
+	<br />
+	<div id="chartlbl"></div>
+	<br />
+	<form id="displayChart" name="myForm" class="chartRadio" onchange="generateChart()"></form>
+	<br />
+	<div id="divChart"></div>
+	</div>
+</body>
+</html>

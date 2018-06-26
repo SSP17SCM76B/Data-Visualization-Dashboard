@@ -1,0 +1,225 @@
+header,
+article,section{
+	display:block;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+header{
+	font-size: 25px;
+	padding: 0px;
+}
+article .line{
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+
+article,img{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+label {
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      font-size: 20px;
+      color: #000;
+}
+
+#page{
+	width:700px;
+	margin:0 auto;
+	position:center;
+}
+
+article{
+	background-color:#213E4A;
+	margin:3em 0;
+	padding:20px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+
+#background-image {
+  background: url("back3.jpg");
+  width: 100%;
+  top: 0;
+  left: 0;
+  height:100%; 
+  opacity: 0.9;
+  position: fixed;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  padding: 0;
+  margin: 0;
+  z-index:0;
+}
+
+
+table 
+{
+	width:25%;
+    margin:auto;
+}
+  
+#left-nav {
+    position: absolute;
+    width: 220px;
+    top: 0px;
+    left:10px;
+    bottom: 0px;
+    border-right: solid 0px #000;
+    color: #ddd;
+    margin-left: 0px;
+}
+
+#right-nav {
+    position: absolute;
+    width: 220px;
+    top: 0px;
+    right:10px;
+    bottom: 0px;
+    border-left: solid 0px #000;
+    color: #ddd;
+    margin-right: 0px;
+}
+
+#chart {
+ 	 position:absolute;
+ 	 bottom:120px; 
+ 	 left:500px; 
+ 	 z-index:1;
+}
+
+ul{
+	padding-left: 0px;
+}
+#left-nav>.list>li {
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.list-item:not(:first-of-type) {
+}
+
+#left-nav>.list>.list-item h3 {
+    margin: 0px;
+    font-size: 20px;
+    color: #e5e5e5;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#left-nav>.list>.list-item p {
+    margin: 0px;
+}
+
+#left-nav>.list>li:active {
+    background-color: #393939;
+}
+
+#left-nav>.title {
+    background: #444;
+    text-align: center;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    /*opacity: .3;*/
+    padding: 4px;
+    font-size: 30px;
+    border-top: solid 1px #555;
+    border-bottom: solid 1px #333;
+}
+
+#right-nav>.title {
+    background: #444;
+    text-align: center;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    /*opacity: .3;*/
+    padding: 4px;
+    font-size: 30px;
+    border-top: solid 1px #555;
+    border-bottom: solid 1px #333;
+    border-bottom: solid 1px #555;
+}
+
+#filter1, #filter2{
+		display: inline-block;
+}
+
+.button {
+    position: relative;
+    background-color: #000000;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.button:after {
+    content: "";
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+ 
+.contents {
+    margin : 0px auto;
+    width : 1300px;
+    border : 1px solid #ccc;
+    padding : 0px;
+    overflow:scroll;
+    height:500px;
+ 
+}
+
+canvas {
+    display: block;
+    width: 600px;
+    height: 400px;
+}
+
+.contents div {
+    margin : 10px 0 10px 0;
+}
+
+.button2 {
+    position: relative;
+    background-color: #000000;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 0px;
+	height: 30px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
